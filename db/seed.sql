@@ -2,10 +2,7 @@
 
 DELETE FROM events;
 
-INSERT INTO events (event, text)
-VALUES
 
-('backpackl', 'backpack');
 
 -- INSERT INTO ()
 -- VALUES
