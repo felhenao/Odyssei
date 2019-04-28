@@ -8,19 +8,17 @@ export default class Navbar extends Component {
     return (
       <nav className="nav-bar">
         <ul>
-          <Link to='/'>
-            <img className="logo" src='https://files.slack.com/files-pri/T0351JZQ0-FAMD93QBG/logomakr_9ufv8t.png' alt="Odyssey"/>
-          </Link>
+
           <Link to='/'>
             <li className="nav-li">Home</li>
           </Link>
 
           <Link to='/api/events'>
-            <li className="nav-li">EVENTS</li>
+            <li className="nav-li">Trips</li>
           </Link>
 
           <Link to='/api/events/new'>
-            <li className="nav-li">New</li>
+            <li className="nav-li">Trip preferences</li>
           </Link>
 
           <Link to='/api/auth/login'>

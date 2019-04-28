@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Mapbox from './Mapbox';
 
 export default class Event extends Component {
   constructor(props) {
@@ -49,23 +48,25 @@ export default class Event extends Component {
     const { event, text, id, img_url, location } = this.state.event;
 
 
-    const likedByMe = (this.state.likeId > 0) ? "Dislike" : "like";
+    const likedByMe = "Embark";
 
     const loaded = this.state.likes ? (
       <div className="event-form-div">
         <div className='form text-event'>
           <img src={img_url} className='img-event'/>
-          <h3>Name:</h3>
-          <p className="text-event">{event}</p>
           <h3>Description:</h3>
+          <p className="text-event">{event}</p>
+          <h3>Starting Point:</h3>
           <p className="text-event">{text}</p>
-          <h3>Location:</h3>
+          <h3>Destination:</h3>
           <p className="text-event">{location}</p>
         </div>
-        <Mapbox />
         <hr />
 
-        <button className="button" onClick={(likedByMe === "Unlike") ? this.handleDislike : this.handleLike}>{likedByMe} ({this.state.likes.length}♡)</button>
+        <button className="button" onClick={(likedByMe === "Unlike") ? this.handleDislike : this.handleLike}>{likedByMe}
+            <Link to='/api/auth/register'></Link>
+
+        </button>
 
         <Link to={`/api/events/${id}/edit`}>
         <button className='button'>Edit</button>

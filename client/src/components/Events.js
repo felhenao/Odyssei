@@ -6,7 +6,7 @@ export default class Events extends Component {
     return (
       <div className="events-list-div">
         <br />
-        <h2>Events List</h2>
+        <h2>Trips</h2>
 
         {this.props.events.map(event => (
 

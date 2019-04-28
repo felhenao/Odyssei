@@ -41,11 +41,11 @@ export default class EventForm extends Component {
 		return (
 			<div className="event-form-div">
 
-				<h1>{id ? 'Edit this ' : 'Create an '}  event, {this.props.user.username}!</h1>
+				<h1>{id ? 'Edit this ' : 'Tell us about your '}  trip, {this.props.user.username}!</h1>
 				<form onSubmit={this.handleSubmit.bind(this)} className={id ? 'edit' : 'create'}>
 					{this.state.redirectHome && <Redirect to='/api/events' />}
 					<label>
-						<h3>Event</h3>
+						<h3>Description</h3>
 						<textarea rows='3' cols ='70'
 							name='event'
 							value={event}
@@ -53,7 +53,7 @@ export default class EventForm extends Component {
 					</label><br/>
 
 					<label>
-						<h3>Text</h3>
+						<h3>Starting Point</h3>
 						<textarea rows='6' cols='70'
 							name='text'
 							value={text}
@@ -61,7 +61,7 @@ export default class EventForm extends Component {
 					</label><br/>
 
 					<label>
-						<h3>Location</h3>
+						<h3>Destination</h3>
 						<textarea rows='2' cols='70'
 							name='location'
 							value={location}
