@@ -8,7 +8,6 @@ export default class Navbar extends Component {
     return (
       <nav className="nav-bar">
         <ul>
-
           <Link to='/'>
             <li className="nav-li">Home</li>
           </Link>
@@ -28,7 +27,6 @@ export default class Navbar extends Component {
           <Link to='/api/auth/register'>
             <li className="nav-li">Register</li>
           </Link>
-
         </ul>
       </nav>
     )
