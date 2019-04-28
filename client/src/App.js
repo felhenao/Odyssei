@@ -12,7 +12,6 @@ import CreateEvent from './components/CreateEvent';
 import EventForm from './components/EventForm';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
-import Mapbox from './components/Mapbox';
 
 export default class App extends Component {
 
