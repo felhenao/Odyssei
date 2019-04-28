@@ -54,11 +54,11 @@ export default class Event extends Component {
       <div className="event-form-div">
         <div className='form text-event'>
           <img src={img_url} className='img-event'/>
-          <h3>Name:</h3>
-          <p className="text-event">{event}</p>
           <h3>Description:</h3>
+          <p className="text-event">{event}</p>
+          <h3>Starting Point:</h3>
           <p className="text-event">{text}</p>
-          <h3>Location:</h3>
+          <h3>Destination:</h3>
           <p className="text-event">{location}</p>
         </div>
         <hr />

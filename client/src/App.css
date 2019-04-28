@@ -126,7 +126,7 @@ input {
 }
 
 .nav-bar {
-  background-color: white;
+  background-color: #d8e9d5;
   color: #45a247;
   padding: 20px 0;
   margin: 0;
@@ -254,4 +254,9 @@ input {
 .logout-page {
   height: 100%;
   margin: 200px;
+}
+
+.footer{
+  background-color: #d8e9d5;
+  font-weight:bold;
 }

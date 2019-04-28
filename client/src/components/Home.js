@@ -15,7 +15,7 @@ export default class Home extends Component {
       <div className='home-container'>
 
         <div className='home-left'>
-          <p><b>My Events:</b></p>
+          <p><b>My Trips:</b></p>
 
           {filter.map(event => (
             <div className='my-event'>
@@ -52,7 +52,7 @@ export default class Home extends Component {
       <div className="homepage">
         <h2>Welcome {greeting}!</h2>
         {loggedIn}
-        
+
         <Link to='/api/events'>
         </Link>
       </div>
